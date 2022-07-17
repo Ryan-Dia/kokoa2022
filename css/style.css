@@ -1,0 +1,230 @@
+@import "reset.css";
+
+
+/*components*/
+@import "components/staus-bar.css";
+@import "components/no-mobile.css";
+
+
+/* screens */
+@import "screens/home.css";
+@import "screens/benefit.css";
+@import "screens/download.css";
+@import "screens/login.css";
+
+* {
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6,span,p,div{
+    word-break: keep-all; 
+    white-space: pre-wrap;
+    
+}
+
+body{
+    background-color: #f2eadd84;
+}
+
+.content-box{
+    position: relative;
+    overflow: hidden;
+    width:auto;
+    height:100vh;
+    margin:0;
+
+}
+
+
+.content-box__video{
+    display: block;
+    width: 100%;
+    height: 100%;
+    mask-image: -webkit-radial-gradient(white, black);
+    backface-visibility: hidden;
+    object-fit:cover;
+    position:absolute;
+    top:0;
+    left:0;
+ 
+ 
+}
+
+.content-box__img {
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    width: 100%;
+    height:100%;
+    object-fit: cover;
+    
+}
+
+.content-box__img--enabled {
+    z-index: -1;
+}
+
+.toss-video__hidden {
+    visibility: hidden;
+    z-index: -1;
+}
+
+@keyframes  toto{
+   0%{
+        opacity:0;
+    }
+    10%{
+        opacity:0;
+    }
+    40%{
+        opacity:0;
+    }
+    80%{
+        opacity:0;
+    }
+    90%{
+        opacity:0.8
+    }
+    100%{
+        opacity:1
+    }   
+}
+
+
+
+
+.maintext-box{
+    position: absolute;
+    top:0px;
+    left:0px;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction:column;
+    animation: toto 4s ease-in-out;
+ 
+
+}  
+
+.maintext-box__content{
+    margin-top:180px;
+    -webkit-box-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    justify-content: flex-start;
+}
+
+.maintext-box__content > h1{
+    width: 100%;
+    text-align:center;
+    margin-bottom: 50px;
+    font-size:66px;
+    line-height:1.4;
+    font-weight:700;
+}
+
+
+.maintext-box__link{
+    display:flex;
+    width:90%;
+    
+    
+}
+
+.maintext-box__a{
+    display:flex;
+    text-decoration: none;  
+    width:100%;
+    position:relative;
+}
+
+.maintext-box__a:first-child{
+    margin-right:5px;
+   
+}
+
+.maintext-box__icon{
+    width:31px;
+    height:31px;
+    z-index:3;
+    margin-right: 3px;
+}
+
+.text {
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 10px 10px 10px;
+    border-radius: 10px; 
+    background-color: rgba(0, 12, 30, 0.8);
+    
+
+}
+ 
+ .text:before {
+    content: "";
+    width: 100%;
+    height: 0%;
+    left: 0px;
+    top: 0px;
+    transition: all 1s 0.6s ease-in-out;
+    position: absolute;
+    background-color:  #3188FF;
+    z-index: 2;
+    border-radius: 10px;
+ }
+ 
+ .text:hover::before {
+    height: 100%;
+ }
+ 
+ .text:after {
+    content: "";
+    width: 100%;
+    height: 0%;
+    left: 0px;
+    top: 0px;
+    transition: all 1s 0.4s ease-in-out;
+    position: absolute;
+    background-color: white;
+    z-index: 1;
+    border-radius: 10px;
+ }
+ .text:hover::after {
+    height: 100%;
+ }
+ 
+ h2 {
+    margin: 0;
+    padding: 0;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(transparent 50%, white 50%);
+    font-size: 42px;
+    -webkit-text-stroke: 0.7px white;
+    transition: all 0.8s 0s ease-in-out;
+    background-size: 100% 200%;
+    background-position: top;
+    z-index: 3;
+    cursor: default;
+   
+ }
+ 
+ .text:hover h2 {
+    background-image: linear-gradient(transparent 50%, white 50%);
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-position: bottom;
+    background-size: 100% 200%;
+ }
+ 

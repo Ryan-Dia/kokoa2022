@@ -1,0 +1,111 @@
+
+.benefit-wraaper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position:relative;
+    background-color: white;
+    border-radius: 15%;
+    flex-direction: column;
+    height: auto;
+}
+
+.benefit-wraaper__inbox{
+    position:absolute;
+    width:100%;
+    top:50px;
+    height:80%;
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    table-layout:fixed;
+}
+
+.benefit-wraaper__inbox::-webkit-scrollbar{
+    display:none;
+}
+
+
+.top-sticky{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 11px 20px;
+    margin: 0 26px;
+    position:sticky;
+    top:0;
+    background-color: white;
+    z-index: 2;
+    
+   
+}
+
+.top-sticky span:first-child{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.benefit-point{
+    padding-left: 68px;
+    padding-right: 50px;
+
+    
+}
+
+.benefit-loyalty__text{
+    display: flex;
+    justify-content: flex-start;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+
+
+.benefit-loyalty__arrow{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 32px;
+    width: 54px;
+    color: rgb(131, 143, 160);
+}
+
+
+
+
+.benefit-loyalty{
+    display: flex;
+    flex-direction: column;
+    margin: 0 35px;
+    padding: 0 15px;
+    height: auto;
+    background-color: white;
+    border-radius: 13px;
+    margin-bottom: 15px;
+}
+
+.benefit-loyalty__imgtext{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 11px;
+}
+
+.benefit-loyalty__img{
+    height: 39px;
+    width: 39px;
+    border-radius: 19.5px;
+}
+
+.benefit-loyalty__text2{
+    color: #3280F3;
+}
+
+
+.bottom-nav__benefit{
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #929797;
+}
